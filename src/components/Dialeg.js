@@ -7,7 +7,7 @@ export default _ =>{
 
   const linies = Linies.map((l)=>{
     return(
-      <Cuadrado>{l}</Cuadrado>
+        <Cuadrado>{l}</Cuadrado>
     );
   });
 
