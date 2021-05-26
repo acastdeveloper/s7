@@ -1,5 +1,6 @@
 import React from 'react';
-import Dialeg from './components/Dialeg'
+
+import Dialeg from './components/Dialeg';
 
 export default _ =>{
   return (
