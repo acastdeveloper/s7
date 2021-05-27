@@ -7,7 +7,6 @@ export const Frase = styled.div`
 
   &:hover {
       background-color: pink;
-      text-decoration:underline;
   }
 
   &::before {
