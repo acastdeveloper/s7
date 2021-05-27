@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export const Cuadrado = styled.div`
+export const Frase = styled.div`
   text-decoration:none;
   font-style: italic;
-  padding: 1rem;
+  padding: 1.5rem;
 
   &:hover {
       background-color: pink;
@@ -13,13 +13,18 @@ export const Cuadrado = styled.div`
   &::before {
     content: "-";
   }
+
+  &::after {
+    content: ".";
+  }
+
 `;
 
 
 export const Wrapper = styled.div`
   max-width: 320px;
   margin: 2rem auto;
-  padding: 2rem;
+  padding-bottom: 3rem;
   background-color: whitesmoke;
-  box-shadow:1px 1px 1px #33333333;
+  box-shadow:1px 1px 1rem #33333333;
 `;

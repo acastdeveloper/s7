@@ -1,24 +1,25 @@
 import React from 'react';
 import Linies from '../db/Linies.json'
+import {Frase} from '../styles/styled';
 
-import {Cuadrado} from '../styles/styled';
+export const r=Linies.length-1;
 
-export default _ =>{
+export const toto="totoculo";
 
-  const linies = Linies.map((l)=>{
-    return(
-        <Cuadrado>{l}</Cuadrado>
-    );
-  });
+const Dialeg = (props) =>{
 
+    const linies = Linies.map((l,index)=>{
+        return(
+          <Frase id={`item-${index}`} className={index%2?`left`:`right`}> {l} </Frase>
+        );
+    });
 
-  return (
-    <>
-      {linies}
-    </>
+    return (
+    <div id="dialogo" data-rang={r}>
+    {linies[props.p]}
+    </div>
   );
 
-
-
-
 }
+
+export default Dialeg;
