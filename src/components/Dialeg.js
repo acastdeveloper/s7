@@ -8,16 +8,18 @@ const Dialeg = (props) =>{
 
     const linies = Linies.map((l,index)=>{
         return(
-          <Frase id={`item-${index}`} className={index%2?`left`:`right`} > {l} </Frase>
+          <Frase id={`item-${index}`} className={props.p==index?"mark":"nomark"}
+          > {l} </Frase>
         );
     });
 
     return (
     <div id="dialogo" data-rang={r}>
-    {linies[props.p]}
+    {linies}
     </div>
   );
 
 }
+
 
 export default Dialeg;

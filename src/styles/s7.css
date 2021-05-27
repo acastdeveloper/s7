@@ -12,3 +12,11 @@
 .right {
     text-align:right;
 }
+
+.mark {
+    background: pink;
+}
+
+.nomark {
+    background: transparent;
+}
