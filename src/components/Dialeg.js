@@ -4,13 +4,11 @@ import {Frase} from '../styles/styled';
 
 export const r=Linies.length-1;
 
-export const toto="totoculo";
-
 const Dialeg = (props) =>{
 
     const linies = Linies.map((l,index)=>{
         return(
-          <Frase id={`item-${index}`} className={index%2?`left`:`right`}> {l} </Frase>
+          <Frase id={`item-${index}`} className={index%2?`left`:`right`} > {l} </Frase>
         );
     });
 
