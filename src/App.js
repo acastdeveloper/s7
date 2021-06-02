@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './styles/s7.css';
+import {Wrapper} from './styles/styled';
 
-function App() {
+import Dialeg, {r} from './components/Dialeg';
+
+
+const App = ()=>{
+
+  const [pos, setPos] =React.useState(0);
+  const back = ()=> setPos(pos>0?pos-1:pos);
+  const forw = ()=> setPos(pos<r?pos+1:pos);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <button onClick={()=>{back()}} className="bot50">Anterior</button>
+      <button onClick={()=>{forw()}} className="bot50">Posterior</button>
+      <Dialeg p={pos} />
+    </Wrapper>
   );
+
 }
+
 
 export default App;

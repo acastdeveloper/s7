@@ -1,0 +1,22 @@
+.bot50 {
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: melon;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align:right;
+}
+
+.mark {
+    background: pink;
+}
+
+.nomark {
+    background: transparent;
+}
